@@ -11,6 +11,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     width: 90%;
     margin: 0 auto;
 }
+
+*body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-image: url(./assets/group-4@2x.png);
     height: 90vh;
@@ -18,11 +30,11 @@ header {
     background-position: center;
 }
 
-h1{
-    color:black;
-    font-size: 60px;
+.heading-1 {
+    font-size: 100px;
+    font-family: 'East Sea Dokdo', cursive;
+    line-height: 90px;
     padding-top: 25%;  
-    font-weight: bold;
 }
 
 ul {
@@ -33,19 +45,19 @@ ul {
 
 li a {
     text-decoration: none;
-    padding: 15px 30px;
     color: black;
     font-size: 30px;
+    margin: 30px 50px 30px 0px;
 }
+
 
 .menu {
     float: left;
 }
 
 .about {
-    background-color: pink;
+    background-color: #FFE9E9;
     padding: 80px 0;
-
 }
 
 img {
@@ -53,7 +65,7 @@ img {
 }
 
 .aboutImg {
-    width: calc(30% - 50px);
+    width: calc(40% - 50px);
     margin-right: 50px;
 }
 
@@ -63,25 +75,30 @@ img {
 }
 
 .aboutContent {
-    width: 70%;
+    width: 60%;
     line-height: 30px;
 }
 
-h2 {
-    font-size: 30px;
-    font-weight: bold;
+.heading-2 {
+    font-size: 55px;
+    font-family: 'East Sea Dokdo', cursive;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 
 button {
-    padding: 10px;
     width: 150px;
-    background-color: blue;
+    background-color: #0178A5;
     color: white;
     cursor: pointer;
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 35px;
+    margin-top: 20px;
 }
 
 .gallery {
-    background-color: rgb(240, 212, 217);
+    background-color: #F7DAE8;
     padding: 60px 0;
 }
 
@@ -93,8 +110,22 @@ button {
 }
 
 .gallery h2 {
-    font-size: 30px;
     text-align: center;
+}
+
+.sub-menu {
+    background-color: #FFE9E9;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a {
+    color: #0178A5;
+}
+.icons {
+    width: calc(33.33% - 20px);
 }
 
 .split img,
@@ -104,26 +135,29 @@ button {
 }
 
 .splitContent {
-    padding: 60px;
+    padding: 50px;
     line-height: 30px;
 }
 
 .split {
-    background-color: pink;
+    background-color: #F7DAE8;
 }
 
 .splitContent button {
-    background-color: purple;
+    background-color: #A7059B;
+    width: 150px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 35px;
+    margin-top: 20px;
 }
 
 .lowerContent {
-    background-color: cornsilk;
-    padding: 20px;
-}
-
-.lowerContent nav {
-    margin: 0;
-
+    background-color: #FFE9E9;
+    padding: 50px 0;
+    text-align: left;
 }
 
 .lowerMenu,
@@ -135,27 +169,80 @@ button {
 .subscription {
     width: calc(40% - 20px);
     line-height: 30px;
+    text-align: center;
 }
 
-.subscription h3, .subscription p  {
+.subscription h3,
+.subscription p  {
     text-align: center;
 }
 
 .lowerMenu,
 .contactInfo {
-    width: calc(30% - 20px)
+    width: calc(30% - 20px);
+    line-height: 40px;
 }
 
-.subscription h3, .contactInfo h3 {
-    font-size: 25px;
-    font-weight: bold;
+.heading-3{
+    font-size: 40px;
+    font-family: 'East Sea Dokdo', cursive;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .subscription input {
-    width: 300px;
+    width: 258px;
     padding: 5px 5px 5px 20px;
 }
 
 .contactInfo{
     text-align: right;
+    line-height: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: #201e21;
+    color: white;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    header {
+        height: 60vh;   
+    }
+    li a {
+        font-size: 20px;
+        margin: 30px 25px 30px 0;
+    }
+
+    .heading-1 {
+        font-size: 70px;
+    }
+
+    .heading-2 {
+        font-size: 45px;
+
+    }
+
+     span {
+        display: none;
+    }
+   
+    .splitContent p {
+        line-height: 15px;
+        font-size: 15px;
+    }
+
 }

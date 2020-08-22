@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>paint</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link href="css/all.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -18,7 +32,7 @@
             <li><a href="#" class="menu">Contact</a></li>
           </ul>
         </nav>
-        <h1>Paint Gallery</h1>
+        <h1 class="heading-1">Paint Gallery</h1>
       </section>
     </header>
     <main>
@@ -31,11 +45,11 @@
             />
           </div>
           <div class="aboutContent">
-            <h2>New product on the shelves</h2>
+            <h2 class="heading-2">New product on the shelves</h2>
             <p>
               Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
               vel. Et eum possim latine torquatos. In semper propriae pro, ad
-              pri viris fabulas. Brute intellegam ex eos. Lorem ipsum dolor sit
+              pri viris fabulas. Brute intellegam ex eos. <span class="hidden-para">Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Nostrum a itaque libero
               cupiditate obcaecati, praesentium minus dolores dignissimos atque
               voluptatibus? Adipisci, soluta unde quod et ducimus provident quas
@@ -45,7 +59,7 @@
               deleniti amet voluptas officiis rem tempora magni, ipsa minus
               similique, nulla est soluta in quibusdam aliquam
               provident?Similique ducimus asperiores laudantium fugit, qui
-              recusandae, officiis!
+              recusandae, officiis!</span>
             </p>
             <button class="button-blue">read more</button>
           </div>
@@ -53,7 +67,7 @@
       </section>
 
       <section class="gallery">
-        <h2>Latest exhibition</h2>
+        <h2 class="heading-2">Latest exhibition</h2>
         <div class="galleryImg wrapper clearfix">
           <img
             src="assets/gallery-image-1@2x.png"
@@ -70,66 +84,84 @@
         </div>
       </section>
 
-      <section class="sub-menu"></section>
+      <section class="sub-menu">
+        <div class="wrapper">
+          <a href="#"><i class="far fa-images icons"></i></a>
+          <a href="#"><i class="far fa-calendar-alt icons"></i></a>
+          <a href="#"><i class="far fa-handshake icons"></i></a>
+        </div>
+      </section>
 
       <section class="divided-content">
-        <div class="split clearfix ">
+        <div class="split clearfix">
           <div class="splitContent wrapper">
-            <h2>Finding the right brushes</h2>
+            <h2 class="heading-2">Finding the right brushes</h2>
             <p>
               Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-              vel. Et eum possim latine torquatos. In semper propriae pro, ad
-              pri viris fabulas. Brute intellegam ex eos. Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-              vel. Et eum possim latine torquatos. In semper propriae pro, ad
-              pri viris fabulas. Brute intellegam ex eos.  Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-              vel. Et eum possim latine torquatos. In semper propriae pro, ad pri
-              viris fabulas. Brute intellegam ex eos.
+              vel. <span class="hidden-para"> Et eum possim latine torquatos. In semper propriae pro, ad
+              pri viris fabulas. Brute intellegam ex eos.Lorem ipsum dolor sit
+              amet, nullam dolores no mei, ea reque mazim vel. Et eum possim
+              latine torquatos. In semper propriae pro, ad pri viris fabulas.
+              Brute intellegam ex eos. Lorem ipsum dolor sit amet, nullam
+              dolores no mei, ea reque mazim vel. </span>
+              torquatos. 
             </p>
-            <button class="button-blue ">read more</button>
+            <button class="button-blue">read more</button>
           </div>
           <img src="assets/right-image@2x.png" />
         </div>
         <div class="split clearfix">
           <img src="assets/left-image@2x.png" />
           <div class="splitContent">
-          <h2>All kinds of paints</h2>
-          <p>
-            Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-            vel. Et eum possim latine torquatos. In semper propriae pro, ad pri
-            viris fabulas. Brute intellegam ex eos.  Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-            vel. Et eum possim latine torquatos. In semper propriae pro, ad pri
-            viris fabulas. Brute intellegam ex eos.  Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
-            vel. Et eum possim latine torquatos. In semper propriae pro, ad pri
-            viris fabulas. Brute intellegam ex eos.
-          </p>
-          <button class="button-blue">read more</button>
+            <h2 class="heading-2">All kinds of paints</h2>
+            <p>
+              Lorem ipsum dolor sit amet, nullam dolores no mei, ea reque mazim
+              vel. <span class="hidden-para">Et eum possim latine torquatos. In semper propriae pro, ad
+              pri viris fabulas. Brute intellegam ex eos. Lorem ipsum dolor sit
+              amet, nullam dolores no mei, ea reque mazim vel. Et eum possim
+              latine torquatos. In semper propriae pro, ad pri viris fabulas.
+              Brute intellegam ex eos. Lorem ipsum dolor sit amet, nullam
+              dolores no mei, ea reque mazim vel. </span>
+              torquatos. 
+            </p>
+            <button class="button-blue">read more</button>
           </div>
         </div>
       </section>
 
       <section class="lowerContent clearfix">
         <div class="wrapper">
-        <div class="lowerMenu">
-        <nav>
-          <ul>
-            <li><a href="#" class="bottomMenu">Home</a></li>
-            <li><a href="#" class="bottomMenu">About</a></li>
-            <li><a href="#" class="bottomMenu">Blog</a></li>
-            <li><a href="#" class="bottomMenu">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-        <div class="subscription">
-          <h3>Stay updated</h3>
-          <p>Subscribe to our newletter to stay updated</p>
-          <input type="text" placeholder="email address" class="client-email" />
-          <button class="button-blue">subscribe</button>
+          <div class="lowerMenu">
+            <nav>
+              <ul>
+                <li><a href="#" class="bottomMenu">Home</a></li>
+                <li><a href="#" class="bottomMenu">About</a></li>
+                <li><a href="#" class="bottomMenu">Blog</a></li>
+                <li><a href="#" class="bottomMenu">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="subscription">
+            <h3 class="heading-3">Stay updated</h3>
+            <p>Subscribe to our newletter to stay updated</p>
+            <input
+              type="text"
+              placeholder="email address"
+              class="client-email"
+            />
+            <button class="button-blue">subscribe</button>
+          </div>
+          <div class="contactInfo">
+            <h3 class="heading-3">Contact</h3>
+            <p>info@gmail.com | 123-456-7890</p>
+            <p>123 some road, Toronto, ON</p>
+            <p>A5A 5A% Canada</p>
+          </div>
         </div>
-        <div class="contactInfo">
-          <h3>Contact</h3>
-        </div>
-      </div>
       </section>
     </main>
+    <footer>
+      <p>Copyright @ 2020 HackerYou</p>
+    </footer>
   </body>
 </html>
