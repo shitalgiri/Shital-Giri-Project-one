@@ -7,12 +7,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 .wrapper {
-    max-width: 1200px; 
+    max-width: 1080px; 
     width: 90%;
     margin: 0 auto;
 }
 
-*body {
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 25px;
@@ -21,6 +21,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 nav {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 header {
@@ -64,17 +65,17 @@ img {
     width: 100%;
 }
 
-.aboutImg {
+.about-img {
     width: calc(40% - 50px);
     margin-right: 50px;
 }
 
-.aboutContent,
-.aboutImg {
+.about-content,
+.about-img {
     float: left;
 }
 
-.aboutContent {
+.about-content {
     width: 60%;
     line-height: 30px;
 }
@@ -95,6 +96,9 @@ button {
     font-family: 'East Sea Dokdo', cursive;
     font-size: 35px;
     margin-top: 20px;
+    max-width: 100%;
+    border: none;
+    min-height: 50px;
 }
 
 .gallery {
@@ -102,11 +106,15 @@ button {
     padding: 60px 0;
 }
 
-.galleryImg img {
-    width: calc(33.33% - 20px);
+.galleryImg li {
     float: left;
-    margin-right: 20px;
-    margin-top: 30px;
+    width: calc((100%  - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery li:nth-of-type(3n) {
+    margin-right: 0;
 }
 
 .gallery h2 {
@@ -116,32 +124,39 @@ button {
 .sub-menu {
     background-color: #FFE9E9;
     font-size: 40px;
-    padding: 50px;
+    padding: 60 0px;
     text-align: center;
     cursor: pointer;
 }
 
 a {
     color: #0178A5;
-}
-.icons {
-    width: calc(33.33% - 20px);
+    transition: 0.3s;
 }
 
-.icon-img-1,
-.icon-img-2,
-.icon-img-3 {
+.icon-menu li {
     float: left;
-    width: calc(33.33% - 20px);
+    width: calc((100%  - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.icon-menu li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.icon-menu a {
+    margin: 0;
 }
 
 .split img,
-.splitContent {
+.split-content {
     float: left;
     width: calc(50% - 0px)
 }
 
-.splitContent {
+.split-content {
     padding: 50px;
     line-height: 30px;
 }
@@ -150,7 +165,7 @@ a {
     background-color: #F7DAE8;
 }
 
-.splitContent button {
+.split-content button {
     background-color: #A7059B;
     width: 150px;
     color: white;
@@ -161,22 +176,21 @@ a {
     margin-top: 20px;
 }
 
-.lowerContent {
+.lower-container {
     background-color: #FFE9E9;
-    padding: 50px 0;
+    padding: 60px 0;
     text-align: left;
 }
 
-.lowerMenu,
-.subscription,
-.contactInfo {
+.lower-content {
     float: left;
+    width: 30%;
+    margin-bottom: 30px;
 }
 
 .subscription {
-    width: calc(40% - 20px);
     line-height: 30px;
-    text-align: center;
+    width: 40%;
 }
 
 .subscription h3,
@@ -184,9 +198,8 @@ a {
     text-align: center;
 }
 
-.lowerMenu,
-.contactInfo {
-    width: calc(30% - 20px);
+.lower-menu,
+.contact-info {
     line-height: 40px;
 }
 
@@ -198,12 +211,17 @@ a {
 }
 
 .subscription input {
-    width: 258px;
-    padding: 5px 5px 5px 20px;
+    width: calc(100% - 150px);
+    padding: 5px 5px 5px 5px;
     max-width: 100%;
+    height: 50px;
 }
 
-.contactInfo{
+.subscription .client-email:focus {
+    padding: 10px;
+}
+
+.contact-info{
     text-align: right;
     line-height: 30px;
 }
@@ -215,12 +233,14 @@ footer {
     padding: 20px;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: black;
     color: white;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: white;
     background-color: rgb(255, 0, 0);
     padding: 10px;
@@ -233,6 +253,11 @@ a:hover {
 
 
 @media (max-width: 800px) {
+
+    body {
+        font-size: 14px;
+    }
+
     header {
         height: 60vh;   
     }
@@ -254,23 +279,26 @@ a:hover {
         display: none;
     }
    
-    .splitContent p {
+    .split-content p {
         line-height: 15px;
         font-size: 15px;
+    }
+
+    .subscription input {
+        width: 100%;
     }
 }
 
 @media (max-width:650px) {
 
-    .splitContent {
-        padding: 30px;
+    .split-content {
+        padding: 20px;
         text-align: center;
 
     }
 
     button,
-    .splitContent button {
-        width: 120px;
+    .split-content button {
         font-size: 24px;
     }
 }
@@ -284,12 +312,12 @@ a:hover {
         font-size: 50px;
     }
 
-    .aboutImg,
-    .aboutContent {
+    .about-img,
+    .about-content {
         width: 100%;
     }
 
-    .aboutContent {
+    .about-content {
         margin-top: 30px;
         text-align: center;
     }
@@ -310,13 +338,19 @@ a:hover {
     width: 100%;
     }
 
-    .splitContent {
+    .split-content {
         width: 100%;
         text-align: center;
     }
 
     .heading-3 {
         font-size: 30px;
+    }
+
+    .subscription input {
+        height: 30px;
+        font-size: 16px;
+        width: 100%;
     }
 }
 
@@ -335,15 +369,13 @@ a:hover {
         font-size: 30px;
     }
 
-    .lowerMenu,
-    .subscription,
-    .contactInfo {
+    .lower-menu .lower-content{
         width: 100%;
         text-align: center;
     }
 
     .subscription,
-    .contactInfo {
+    .contact-info {
         margin-top: 30px;
     }
 }
