@@ -88,7 +88,6 @@ img {
 }
 
 button {
-    width: 150px;
     background-color: #0178A5;
     color: white;
     cursor: pointer;
@@ -96,9 +95,10 @@ button {
     font-family: 'East Sea Dokdo', cursive;
     font-size: 35px;
     margin-top: 20px;
+    width: 150px;
     max-width: 100%;
-    border: none;
     min-height: 50px;
+    border: none;
 }
 
 .gallery {
@@ -124,9 +124,9 @@ button {
 .sub-menu {
     background-color: #FFE9E9;
     font-size: 40px;
-    padding: 60 0px;
     text-align: center;
     cursor: pointer;
+    padding: 60 0px;
 }
 
 a {
@@ -166,14 +166,7 @@ a {
 }
 
 .split-content button {
-    background-color: #A7059B;
-    width: 150px;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'East Sea Dokdo', cursive;
-    font-size: 35px;
-    margin-top: 20px;
+    background-color: #A7059B;    
 }
 
 .lower-container {
@@ -203,9 +196,9 @@ a {
     line-height: 40px;
 }
 
-.heading-3{
-    font-size: 40px;
+.heading-3 {
     font-family: 'East Sea Dokdo', cursive;
+    font-size: 40px;
     line-height: 30px;
     margin-bottom: 20px;
 }
